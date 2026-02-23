@@ -33,7 +33,8 @@
 
   /* Typography */
   .section-title {
-    @apply text-primary text-[clamp(28px, 4vw, 38px)] font-bold mb-4 text-center leading-tight;
+    @apply text-primary font-bold mb-4 text-center leading-tight;
+    font-size: clamp(28px, 4vw, 38px);
   }
 
   .section-subtitle {
