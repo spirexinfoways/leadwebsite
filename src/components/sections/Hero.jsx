@@ -55,7 +55,7 @@ const Hero = ({ openModal }) => {
 
             {/* Doodle: Big Arrow pointing to CTA (Desktop) */}
             <div className="absolute bottom-32 left-[15%] pointer-events-none hidden xl:block z-20" style={{ opacity: 0.8 }}>
-                <svg width="200" height="150" viewBox="0 0 200 150" fill="none" stroke="#2563EB" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'rotate(-15deg)' }}>
+                <svg width="200" height="120" viewBox="0 0 200 150" fill="none" stroke="#2563EB" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'rotate(-15deg)' }}>
                     <path d="M10 140 Q 80 140 160 50" strokeDasharray="8 8" />
                     <path d="M140 45 L170 40 L160 70" />
                     <text x="8" y="70" fontFamily="sans-serif" fontSize="18" fontWeight="bold" fill="#2563EB" stroke="none" transform="rotate(10 30 70)">Start Here!</text>
