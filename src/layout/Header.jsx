@@ -57,7 +57,7 @@ const Header = ({ openModal }) => {
                 </div>
 
                 {/* Desktop Nav links */}
-                <nav className="flex items-center gap-6 xl:gap-8 max-lg:hidden">
+                <nav className="flex items-center gap-6 xl:gap-8 max-xl:hidden">
                     {navLinks.map(({ label, href }) => (
                         <a key={label} href={href}
                             className="relative text-[15px] font-black text-[#0B1D3A] uppercase tracking-wider transition-all hover:-translate-y-0.5 group"
@@ -74,7 +74,7 @@ const Header = ({ openModal }) => {
                 {/* Mobile Menu Toggle Button */}
                 <button
                     onClick={toggleMenu}
-                    className="lg:hidden flex flex-col items-center justify-center w-12 h-12 border-2 border-[#0B1D3A] bg-white shadow-[3px_3px_0px_#0B1D3A] rounded-sm z-50 transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none"
+                    className="xl:hidden flex flex-col items-center justify-center w-12 h-12 border-2 border-[#0B1D3A] bg-white shadow-[3px_3px_0px_#0B1D3A] rounded-sm z-50 transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none"
                     aria-label="Toggle menu"
                 >
                     <div className="relative w-6 h-5">
