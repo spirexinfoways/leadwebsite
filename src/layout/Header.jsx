@@ -86,7 +86,7 @@ const Header = ({ openModal }) => {
 
                 {/* Desktop CTA */}
                 <button onClick={() => { openModal(); closeMenu(); }}
-                    className="btn bg-[#2563EB] text-white font-black border-2 border-[#0B1D3A] shadow-[4px_4px_0px_#0B1D3A] hover:shadow-[6px_6px_0px_#0B1D3A] hover:-translate-y-0.5 transition-all hidden sm:block"
+                    className="btn bg-[#2563EB] text-white font-black border-2 border-[#0B1D3A] shadow-[4px_4px_0px_#0B1D3A] hover:shadow-[6px_6px_0px_#0B1D3A] hover:-translate-y-0.5 transition-all hidden xl:block"
                     style={{ padding: '10px 24px', fontSize: '15px' }}>
                     Start Now →
                 </button>
