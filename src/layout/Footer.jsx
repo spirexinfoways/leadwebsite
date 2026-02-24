@@ -32,11 +32,12 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div style={{ fontSize: '24px', fontWeight: 900, letterSpacing: '-0.02em', marginBottom: '8px', color: '#0B1D3A' }}>
-                            Spirex<span style={{ color: '#2563EB' }}>.</span>
-                            <span style={{ fontSize: '11px', fontWeight: 800, color: '#0B1D3A', marginLeft: '4px', letterSpacing: '0.05em', textTransform: 'uppercase', verticalAlign: 'middle' }}>
-                                Infoways
-                            </span>
+                        <div className="mb-6 shrink-0 cursor-pointer" style={{ maxWidth: '350px' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                            <img
+                                src="/logo-full-cropped2.png"
+                                alt="Spirex Infoways"
+                                style={{ height: '80px', width: 'auto', objectFit: 'contain' }}
+                            />
                         </div>
                         <p style={{ color: '#475569', fontSize: '14px', lineHeight: '1.6', fontWeight: 600 }}>
                             Professional websites for Indian small businesses. Delivered in 48 hours. Starting at <span className="text-[#DC2626] font-black">₹4,999</span>.

@@ -1,9 +1,9 @@
 import React from 'react';
 
 const portfolioItems = [
-    { label: 'Restaurant Business', tag: 'Food & Dining', shadow: '#F59E0B' }, // Orange
-    { label: 'Boutique & Fashion', tag: 'Retail', shadow: '#EC4899' }, // Pink
-    { label: 'Clinic / Healthcare', tag: 'Medical', shadow: '#14B8A6' }, // Teal
+    { label: 'Restaurant Business', tag: 'Food & Dining', shadow: '#F59E0B', image: '/portfolio-2.png', link: 'https://patelfood.co.in/' }, // Patel Food
+    { label: 'Boutique & Fashion', tag: 'Retail', shadow: '#EC4899', image: '/portfolio-1.png', link: 'https://manav-pumps.vercel.app/' }, // Manav pumps
+    { label: 'Clinic / Healthcare', tag: 'Medical', shadow: '#14B8A6', image: '/portfolio-3.png', link: 'https://om-dental-spix-rjk-den-0226-011.vercel.app/' }, // Om Dental
 ];
 
 const Trust = ({ openModal }) => {
@@ -42,8 +42,8 @@ const Trust = ({ openModal }) => {
 
                 {/* Portfolio Grid - Note Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24 pt-4 relative px-4">
-                    {portfolioItems.map(({ label, tag, shadow }, i) => (
-                        <div key={label} className="relative transition-transform hover:-translate-y-2 cursor-pointer group">
+                    {portfolioItems.map(({ label, tag, shadow, image, link }, i) => (
+                        <div key={label} onClick={() => window.open(link, '_blank')} className="relative transition-transform hover:-translate-y-2 cursor-pointer group">
                             {/* Tape */}
                             <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-14 h-6 bg-[#8B5CF6] border-2 border-[#0B1D3A] z-20 shadow-sm" style={{ transform: `rotate(${i % 2 === 0 ? '-3deg' : '2deg'})` }}>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-30">
@@ -55,15 +55,15 @@ const Trust = ({ openModal }) => {
                             <div className="bg-white border-2 border-[#0B1D3A] rounded-sm h-[320px] flex flex-col p-6 text-center transition-all duration-300 group-hover:bg-[#F8FAFC]"
                                 style={{ boxShadow: `8px 8px 0px ${shadow}` }}>
 
-                                {/* Photo frame mockup */}
-                                <div className="w-full flex-grow border-2 border-[#0B1D3A] bg-[#F1F5F9] mb-6 flex flex-col relative overflow-hidden">
+                                {/* Browser photo frame mockup */}
+                                <div className="w-full flex-grow border-2 border-[#0B1D3A] bg-white mb-6 flex flex-col relative overflow-hidden">
                                     {/* Browser dot header */}
                                     <div className="border-b-2 border-[#0B1D3A] h-6 flex items-center gap-1.5 px-3 shrink-0 bg-[#E2E8F0]">
                                         <div className="w-2 h-2 rounded-full border-2 border-[#0B1D3A] bg-white" />
                                         <div className="w-2 h-2 rounded-full border-2 border-[#0B1D3A] bg-white" />
                                     </div>
-                                    <div className="flex-1 w-full bg-[#CBD5E1] opacity-50 relative flex items-center justify-center">
-                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#475569" strokeWidth="2"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                                    <div className="flex-1 w-full bg-[#CBD5E1] relative flex items-center justify-center">
+                                        <img src={image} alt={label} className="absolute inset-0 w-full h-full object-cover object-top" />
                                     </div>
                                 </div>
 
@@ -92,7 +92,7 @@ const Trust = ({ openModal }) => {
 
                     <div className="bg-[#EFF6FF] border-2 border-[#0B1D3A] p-8 md:p-10 shadow-[8px_8px_0px_#3B82F6] rounded-sm flex items-center gap-8 max-md:flex-col max-md:text-center">
                         <div className="w-24 h-24 rounded-full border-2 border-[#0B1D3A] bg-white shrink-0 flex items-center justify-center shadow-[4px_4px_0px_#0B1D3A] overflow-hidden">
-                            <span className="font-bold text-[#475569] text-xs">Photo</span>
+                            <span className="font-bold text-[#475569] text-xs"><img src="/logo-icon-cropped2.png" alt="Spirex Infoways Icon" className="w-[80px]" /></span>
                         </div>
                         <div>
                             <h4 className="font-extrabold text-[#0B1D3A] text-[22px] mb-2">Spirex Infoways</h4>

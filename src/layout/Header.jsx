@@ -40,18 +40,20 @@ const Header = ({ openModal }) => {
             }}
         >
             <div className="container-custom flex justify-between items-center relative z-50" style={{ height: '72px' }}>
-                {/* Logo - Doodle Style */}
-                <div className="relative group cursor-pointer" onClick={() => { openModal(); closeMenu(); }}>
-                    <div className="absolute -inset-1 bg-[#FCD34D] rounded-sm blur-sm opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div className="relative border-2 border-[#0B1D3A] px-3 py-1.5 bg-white shadow-[3px_3px_0px_#0B1D3A] rotate-[-2deg] transition-transform group-hover:rotate-[0deg]">
-                        <div style={{ fontSize: '20px', fontWeight: 900, color: '#0B1D3A', letterSpacing: '-0.02em', lineHeight: 1 }}>
-                            Spirex
-                            <span style={{ color: '#2563EB' }}>.</span>
-                            <span style={{ fontSize: '10px', fontWeight: 800, color: '#0B1D3A', marginLeft: '4px', letterSpacing: '0.05em', textTransform: 'uppercase', verticalAlign: 'middle' }}>
-                                Infoways
-                            </span>
-                        </div>
-                    </div>
+                {/* Logo */}
+                <div className="relative cursor-pointer flex items-center shrink-0" onClick={() => { openModal(); closeMenu(); }}>
+                    <img
+                        src="/logo-full-cropped2.png"
+                        alt="Spirex Infoways"
+                        className="hidden sm:block"
+                        style={{ height: '35px', width: 'auto', objectFit: 'contain' }}
+                    />
+                    <img
+                        src="/logo-icon-cropped2.png"
+                        alt="Spirex Infoways"
+                        className="sm:hidden"
+                        style={{ height: '56px', width: 'auto', objectFit: 'contain' }}
+                    />
                 </div>
 
                 {/* Desktop Nav links */}
